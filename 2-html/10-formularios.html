@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>formularios</title>
+</head>
+<body>
+	<h1>formularios</h1>
+	<form action="" method="post">
+		<fieldset>
+			<div>
+				<legend>datos personales</legend>
+			<label for="nombre">nombre completo</label>
+			<input type="text" id="nombre" name="nombre">
+			</div>
+			<div>
+				<label for="clave">contraseña:</label>
+			<input type="password" id="clave" name="clave">
+			</div>
+			<div>
+				<label for="foto">foto:</label>
+			<input type="file" id="foto" name="foto">
+			</div>
+			<div>
+				<label for="genero">genero:</label>
+				<select name="genero" id="genero">
+					<option value="">seleccione el genero...</option>
+					<option value="femenino">femenino</option>
+					<option value="masculino">masculino</option>
+				</select>
+			</div>
+			<div>
+				<label for="descripcion">descripcion:</label>
+				<br>
+				<textarea name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>datos SENA</legend>
+			<input type="hidden" name="centro" value="CPIC">
+			<div>
+				seleccione uno o mas modulos:
+				<br>
+				<label>
+					<input type="checkbox" name="modulo">
+					analisis
+				</label>
+				
+			</div>
+			<div>
+				<label>
+					<input type="checkbox" name="modulo">
+					desarrollo
+				</label>
+				
+			</div>
+			<div>
+			<label>
+					<input type="checkbox" name="modulo">
+					etica
+				</label>
+				</div>
+				<div>
+				<label>
+					<input type="checkbox" name="modulo">
+					comunicaciones
+				</label>
+				</div>
+				<br>
+				<div>
+					seleccione la titulacion
+					<br>
+					<label>
+						<input type="radio" name="titulacion">
+						ADSI
+					</label>
+					<br>
+					<label>
+						<input type="radio" name="titulacion">
+						electricidad industrial
+					</label>
+					<br>
+					<label>
+						<input type="radio" name="titulacion">
+						soldadura
+					</label>
+					<br>
+					<label>
+						<input type="radio" name="titulacion">
+						automotriz
+					</label>
+				</div>
+		</fieldset>
+		<br>
+		<input type="submit" value="enviar formulario">
+		<input type="submit" value="limpiar formulario">
+	</form>
+</body>
+</html>
