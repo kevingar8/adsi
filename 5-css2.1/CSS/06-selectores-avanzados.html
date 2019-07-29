@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores Avanzados</title>
+    <style>
+        /* Selector Hijos */
+        ul>li {
+            background-color:aqua;
+            margin: 4px;
+        }
+        /* Selector Adyascente */
+        ul li + li + li {
+            background-color: fuchsia;
+        }
+        /* Selector de Atributo */
+        li[class=super] {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectores Avanzados</h1>
+    <ul>
+        <li>
+            Kinetsu No Yaiba:
+            <ul>
+                <li>Tangiro</li>
+                <li>Zenuzuke</li>
+                <li>Zenuzuke</li>
+            </ul>
+        </li>
+        <li>
+            Shingeki No Kyogin:
+            <ul>
+                <li>Eren</li>
+                <li>Mikass</li>
+                <li>Armin</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
