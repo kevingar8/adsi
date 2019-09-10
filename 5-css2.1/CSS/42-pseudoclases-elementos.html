@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo (Clases/Elemento) (first-child) </title>
+    <style>
+        body {
+            font: 16px arial;
+        }
+        nav.links {
+            margin: 10px auto;
+            width: 600px;
+        }
+        nav.links a {
+            display: inline-block;
+            width: 125px;
+        }
+        nav.links a:link:first-child {
+            color: #ffd03f;
+        }
+        nav.links a:link,
+        nav.links a:visited {
+            border-bottom: 10px solid #0b5244;
+            background-color: #00a687;
+            color: #0b5244;
+            padding:10px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav.limks a:hover {
+            background-color: #0b5244;
+            border-bottom: 10px solid #00a687;
+            color: #00a687;
+        }
+        nav.links a:active {
+            background-color: red;
+            border-bottom: 10px solid #642424;
+            color: #642424;
+        }
+        input.input {
+            border: 1px solid #00a687;
+            outline: none;
+            padding: 10px;
+        }
+        input.input:focus {
+            background-color: #c5ffe6;
+            border: 1px dotted #0b5244;
+        }
+        p {
+            width: 600px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+        p:first-letter {
+            color: teal;
+            font-size: 5em;
+        }
+        p:first-line {
+            background-color:purple;
+            text-decoration: line-through;
+        }
+        div.box {
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+        }
+        div.box:before {
+            background-color: orangered;
+            content: "";
+            height: 200px;
+            position: absolute;
+            left: 20px;
+            width: 200px;
+        }
+        div.box:after {
+            background-color: green;
+            content: "";
+            height: 200px;
+            position: absolute;
+            left: 30px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Pseudo (Clases/Elemento)</h1>
+        <h4>Enlaces (link, visited, active, hover)</h4>
+        <nav class="links">
+            <a href="javascript:;">Home</a>
+            <a href="javascript:;">About Us</a>
+            <a href="javascript:;">Services</a>
+            <a href="javascript:;">Contact Us</a>
+    </nav>
+    <h4>Elemento de Entrada Formulario (Foco)</h4>
+    <input type="text" class="input" placeholder="Correo Electronico">
+    <h4>Primera Letra/Linea</h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsa, fugit exercitationem odit officia, deleniti autem asperiores minus reiciendis vero vitae et maiores in dolorem cum ad odio atque minima.
+    </p>
+    <H4>Antes/Despues</H4>
+    <div class="box"></div>
+    </main>
+</body>
+</html>

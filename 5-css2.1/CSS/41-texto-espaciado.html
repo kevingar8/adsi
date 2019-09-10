@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texto (Espaciado)</title>
+    <style>
+        section.spacing {
+            margin: 10px auto;
+            width: 700px;
+        }
+        section.spacing div {
+            border: 1px solid #aaa;
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;
+            width: 150px;
+        }
+        section.spacing div.ls1 { letter-spacing: normal; }
+        section.spacing div.ls2 { letter-spacing: 1em; }
+        section.spacing div.ls3 { letter-spacing: inherit; }
+        section.spacing div.ws1 { word-spacing: normal; }
+        section.spacing div.ws2 { word-spacing: 1em; }
+        section.spacing div.ws3 { word-spacing: inherit; }
+    </style>
+</head>
+<body>
+    <h1>Texto (Espaciado)</h1>
+    <section class="spacing">
+        <div class="ls1">lorem ipsum dolor </div>
+        <div class="ls2">lorem ipsum dolor .</div>
+        <div class="ls3">lorem ipsum dolor </div>
+        <div class="ws1">lorem ipsum dolor </div>
+        <div class="ws2">lorem ipsum dolor .</div>
+        <div class="ws3">lorem ipsum dolor </div>
+    </section>
+</body>
+</html>
