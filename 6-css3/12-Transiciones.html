@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transiciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.box {
+            border: 2px solid #333;
+            height: 300px;
+            margin: 20px auto;
+            width: 200px;
+        }
+        div.box1 {
+            background-color: aqua;
+            transition: all .4s ease-in;
+        }
+        div.box1:hover {
+            background-color: teal;
+            width: 400px;
+        }
+        div.box2 {
+            background-color: crimson;
+            transition: all 1s ease-out;
+        }
+        div.box2:hover {
+            background-color: blueviolet;
+            transform: rotate(180deg);
+        }
+        div.box3 {
+            background-color: orange;
+            transition: all 2s 1s liner;
+        }
+        div.box3:hover {
+            background-color: orangered;
+            transform: scale(.5); 
+        }
+        div.box4 {
+            background-color: gray;
+            transition: all 1s ease-in-out;
+        }
+        div.box4:hover {
+            background-color: black;
+            transform: translateX(200px);
+        }
+        div.box5 {
+            background-color: purple;
+            transition: width 1s, height 1s 1s, bckground 1s 2s;
+        }
+        div.box5:hover {
+            background-color: blueviolet;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Transiciones</h1>
+        </header>
+        <section>
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+        </section>
+    </main>
+</body>
+</html>

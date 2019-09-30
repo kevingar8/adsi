@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reto Media-Queries</title>
+</head>
+<style>
+        body {
+            background: #fff;
+        }
+
+        div.box {
+            margin: 20px auto;
+            padding: 10px;
+            display: inline-block;
+            border: 2px solid black;
+            height: 300px;
+            width: 200px;
+        }
+        main {
+            margin: 20px auto;
+        }
+        div.box1 {
+            background-image: url(imgs/luffy.jpg);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        div.box2 {
+            background-image: url(imgs/zoro.jpg);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        div.box3 {
+            background-image: url(imgs/nami.jpg);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        div.box4 {
+            background-image: url(imgs/usopp.jpg);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        div.box4 {
+            background-image: url(imgs/sanji.jpg);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        div.box5 {
+            background-image: url(imgs/robin.jpg);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        div.box6 {
+            background-image: url(imgs/brook.png);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        div.box7 {
+            background-image: url(imgs/chopper.jpg);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        div.box8 {
+            background-image: url(imgs/franky.jpg);
+            background-size: cover;
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        section {
+            background-image: url(Retos/imgs/o1.jpg);
+            border: 1opx solid black;
+            padding: 20px;
+        }
+        figure.logo {
+            background-image: url(imgs/onepiece.jpg);
+            background-size: cover;
+            margin: 0px auto;
+            height: 350px;
+            width: 600px; 
+        }
+        div h2 {
+            border: 2px dashed #fff;
+            text-align: center;
+        }
+        div p {
+            border: 2px dashed #fff;
+            text-align: justify;
+            font-size: 25px;
+        }
+        div.oda {
+            margin: 20px auto;
+            background-image: url(imgs/oda.jpg);
+            border: 2px solid aqua;
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+        }
+        /* Tablet */
+
+            @media (max-width: 800px) {
+                body {
+                    background: #fff;
+                }
+                div.box {
+                    margin: 20px auto;
+                    padding: 10px;
+                    display: inline-block;
+                    border: 2px solid black;
+                    height: 300px;
+                    width: 200px;
+                }
+                figure.logo {
+                    background-image: url(imgs/logo2.jpg);
+                    background-size: cover;
+                    margin: 0px auto;
+                    height: 250px;
+                    width: 680px; 
+                }
+            }
+            /* Celular */
+                @media (max-width: 590px) {
+                    body {
+                        background: #eee;
+                    }
+                    div.box {
+                        margin: 20px auto;
+                        padding: 10px;
+                        display: inline-block;
+                        border: 2px solid black;
+                        height: 400px;
+                        width: 400px;
+                    }
+                    figure.logo {
+                        background-image: url(imgs/logo1.jpg);
+                        background-size: cover;
+                        margin: 0px auto;
+                        height: 400px;
+                        width: 400px; 
+                    }
+                }
+    </style>
+</head>
+<body>
+    <main>
+        <figure class="logo"></figure>
+        <section>
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+            <div class="box box8"></div>
+            <div>
+                <h2>Creador de la historia de ONE PIECE:</h2>
+                <p>
+                    Eiichiro Oda (尾田栄一郎 Oda Eiichirō?) es un mangaka nacido el 1 de enero de 1975 en la prefectura de Kumamoto. Conocido por su serie de manga One Piece (1997-presente) cuya obra es la más vendida de todos los tiempos con más de 450 millones de copias en circulación en todo el mundo y la única en la historia en conseguir un récord Guinness al ser el manga más vendido de todos los tiempos.
+                </p>
+            </div>
+            <br>
+            <div class="oda"></div>
+            <br>
+            <div>
+                <h2>Sinopsis:</h2>
+                <p>Riqueza, fama, poder... un hombre había obtenido todo en este mundo, era el Rey de los Piratas Gold Roger. Antes de morir sus últimas palabras inspiraron al mundo a aventurarse al mar: "¿Mi tesoro? Si lo queréis es vuestro... lo he escondido todo en ese lugar". Y así dio comienzo lo que se conoce como la Gran Era de la Piratería, lanzando a cientos de piratas al mar para encontrar el gran tesoro One Piece. Esta serie relata las aventuras y desventuras de uno de esos piratas, Monkey D. Luffy, quien accidentalmente de pequeño, comió una Fruta del Diablo (Akuma no Mi en japonés), en particular una Gomu Gomu no Mi que hizo que su cuerpo ganara las propiedades físicas de la goma, convirtiéndose en el hombre de goma. Luffy, después de dicho suceso, decide que se convertirá en el próximo Rey de los Piratas y para ello, deberá encontrar el "One Piece".</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

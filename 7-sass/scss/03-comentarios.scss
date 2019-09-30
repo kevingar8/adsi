@@ -1,0 +1,10 @@
+// comentario de line
+// este comentario solo es de sass
+section.content {
+    /* este es un comentario del bloque si es visible en CSS */
+    p {
+        line-height: 2em;
+        word-spacing: 0.6em;
+        text-align: justify;
+    }
+}
